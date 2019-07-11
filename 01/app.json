@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/found/found",
+    "pages/index/index",
+    "pages/mall/mall",
+    
+    "pages/user/user",
+    "pages/card/card",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+    
+  },
+    "tabBar": {
+      "selectedColor": "#ff9900",
+      
+      "list": [
+        {
+          "pagePath": "pages/card/card",
+          "text": "名片",
+          "iconPath": "/pages/imags/tabBar/01.png",
+          "selectedIconPath": "/pages/imags/tabBar/01-2.png"
+        },
+        {
+          "pagePath": "pages/mall/mall",
+          "text": "商城",
+          "iconPath": "/pages/imags/tabBar/02.png",
+          "selectedIconPath": "/pages/imags/tabBar/02-2.png"
+        },
+        {
+          "pagePath": "pages/found/found",
+          "text": "发现",
+          "iconPath": "/pages/imags/tabBar/03.png",
+          "selectedIconPath": "/pages/imags/tabBar/03-2.png"
+        },
+        {
+          "pagePath": "pages/index/index",
+          "text": "官网",
+          "iconPath": "/pages/imags/tabBar/04.png",
+          "selectedIconPath": "/pages/imags/tabBar/04-2.png"
+        },
+        {
+          "pagePath": "pages/user/user",
+          "text": "我的",
+          "iconPath": "/pages/imags/tabBar/05.png",
+          "selectedIconPath": "/pages/imags/tabBar/05-2.png"
+        }
+       
+        
+      ]
+    },
+  "sitemapLocation": "sitemap.json"
+}

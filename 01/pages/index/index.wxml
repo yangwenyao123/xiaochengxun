@@ -1,0 +1,391 @@
+<view class="content">
+  <!-- 轮播图 -->
+  <view class='banner'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class='ps' indicator-dots="true"  indicator-color="#ccc" indicator-active-color="#ff9900">
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 问卷调查 -->
+  <view class='box'>
+    <view class='from'>
+      <view class='title'>
+        <view class='icon iconfont icontiaochawenjuan'></view>
+        <text> 问卷表单</text>
+        </view>
+      <view class='from-img'>
+        <image src='/pages/imags/index/0.jpg'></image>
+      </view>
+      <view class='submit'>提交表单</view>
+    </view>
+  </view>
+
+
+
+  <!-- 售EASY介绍 -->
+  <view class='box'>
+    <view class='jieshao'>
+      <view class='title'>
+        <view class='icon iconfont icontiaochawenjuan'></view>
+         <text>售EASY介绍</text></view>
+      <view class='neirong'>夜，结束了一天的喧嚣后安静下来，伴随着远处路灯那微弱的光。风，毫无预兆地席卷整片旷野，撩动人的思绪万千。星，遥遥地挂在天空之中，闪烁着它那微微星光，不如阳光般灿烂却如花儿般如痴如醉。夜，结束了一天的喧嚣后安静下来，伴随着远处路灯那微弱的光。风，毫无预兆地席卷整片旷野，撩动人的思绪万千。星，遥遥地挂在天空之中，闪烁着它那微微星光，不如阳光般灿烂却如花儿般如痴如醉</view>
+    </view>
+  </view>
+
+  <!-- 视频展示 -->
+  <view class='box'>
+    <view class='video'>
+      <view class='title'>
+        <view class='icon iconfont iconshipin'>
+
+        </view><text> 视频展示</text></view>
+      <view class='video-list'>
+
+        <view class='video-one'>
+        <view  class="video2">
+    <video id="myVideo" class="myVideo" src="{{video}}" custom-cache="{{false}}" >
+    </video>
+    <cover-view class="controls" style="display:{{tab_image}};">
+    <cover-image src="/pages/imags/15.png" />
+    </cover-view>
+    <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+   <cover-image bindtap="bindplay" src="/pages/imags/156.png" style="width:160rpx;"  />
+    </cover-view>
+</view>
+
+
+          <!-- <image src='/pages/imags/index/0.jpg'></image> -->
+        </view>
+
+        <view class='video-second'>
+          <image src='/pages/imags/index/02.jpg' class='video-second'></image>
+        </view>
+
+        <view class='video-three'>
+          <swiper class='swiper'>
+            <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+
+              <swiper-item class="wiper-item">
+                <image src="{{item}}" class="show" />
+              </swiper-item>
+
+              <!--   -->
+            </block>
+          </swiper>
+        </view>
+
+
+      </view>
+    </view>
+  </view>
+
+  <!-- 企业荣誉 -->
+  <view class='box'>
+    <view class='enterprise'>
+      <view class='title'>
+       <view class='icon iconfont iconicon'>
+        </view><text> 企业荣誉</text></view>
+    </view>
+    <view class='ente-box'>
+      <view class='item'>
+        <view class='top'>
+          <image src='/pages/imags/index/0.jpg' class='certificate'></image>
+        </view>
+        <view class='border'></view>
+        <view class='text'>深圳市信息行业协会会员单位</view>
+
+      </view>
+      <view class='item'>
+        <view class='top'>
+          <image src='/pages/imags/index/0.jpg' class='certificate'></image>
+        </view>
+        <view class='border'></view>
+        <view class='text'>深圳市信息行业协会会员单位</view>
+      </view>
+
+      <view class='item'>
+        <view class='top'>
+          <image src='/pages/imags/index/0.jpg' class='certificate'></image>
+        </view>
+        <view class='border'></view>
+        <view class='text'>深圳市信息行业协会会员单位</view>
+      </view>
+
+      <view class='item'>
+        <view class='top'>
+          <image src='/pages/imags/index/0.jpg' class='certificate'></image>
+        </view>
+        <view class='border'></view>
+        <view class='text'>深圳市信息行业协会会员单位</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 合作伙伴 -->
+  <view class='box'>
+    <view class='title'>
+      <view class='icon iconfont iconhezuo'>
+      </view><text> 合作伙伴</text></view>
+    <view class='partner'>
+
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='item-img'></image>
+        <view class='bg'></view>
+        <view class='text'>红十三</view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 企业高管 -->
+
+  <view class='box'>
+    <view class='title'>
+      <view class='icon iconfont icontuanduicheng '>
+      </view><text> 企业高管</text></view>
+
+    <view class='executives'>
+
+      <view class='item'>
+        <view class='touxiang'>
+          <image src='/pages/imags/index/0.jpg'></image>
+        </view>
+        <view class='executives-title'>
+          <view class='position'>代理人</view>
+          <view class='name'>杨文要</view>
+          <view class='bottom'></view>
+        </view>
+        <view class='miaosu'>曾经以为，相爱的人一定要相守，只有相守，情感才能长久。可是，此岸和彼岸只不过是空间的差距，却无法拉长心灵的距离。</view>
+      </view>
+
+      <view class='item'>
+        <view class='touxiang'>
+          <image src='/pages/imags/index/0.jpg'></image>
+        </view>
+        <view class='executives-title'>
+          <view class='position'>代理人</view>
+          <view class='name'>杨文要</view>
+          <view class='bottom'></view>
+        </view>
+        <view class='miaosu'>曾经以为，相爱的人一定要相守，只有相守，情感才能长久。可是，此岸和彼岸只不过是空间的差距，却无法拉长心灵的距离。</view>
+      </view>
+
+      <view class='item'>
+        <view class='touxiang'>
+          <image src='/pages/imags/index/0.jpg'></image>
+        </view>
+        <view class='executives-title'>
+          <view class='position'>代理人</view>
+          <view class='name'>杨文要</view>
+          <view class='bottom'></view>
+        </view>
+        <view class='miaosu'>曾经以为，相爱的人一定要相守，只有相守，情感才能长久。可是，此岸和彼岸只不过是空间的差距，却无法拉长心灵的距离。</view>
+      </view>
+
+      <view class='item'>
+        <view class='touxiang'>
+          <image src='/pages/imags/index/0.jpg'></image>
+        </view>
+        <view class='executives-title'>
+          <view class='position'>代理人</view>
+          <view class='name'>杨文要</view>
+          <view class='bottom'></view>
+        </view>
+        <view class='miaosu'>曾经以为，相爱的人一定要相守，只有相守，情感才能长久。可是，此岸和彼岸只不过是空间的差距，却无法拉长心灵的距离。</view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 企业历程 -->
+  <view class='box'>
+    <view class='title'>
+      <view class='icon iconfont iconqiye'>
+      </view><text>企业历程</text> </view>
+
+    <view class='process'>
+      <view class='item'>
+        <view class='year'>
+         <view class='i1'></view>
+         <view class='i2'></view>
+          2019年</view>
+        <view class='li'>
+          <view class='in'>3月</view>
+          <view class='results'>
+            <view class='dots'></view> 时光荏苒，岁月无声。日子不紧不慢的如涓涓溪水静静的流去，而从身边流去的只有时光，</view>
+        </view>
+
+        <view class='li'>
+          <view class='in'>3月</view>
+          <view class='results'>
+            <view class='dots'></view> 时光荏苒，岁月无声。日子不紧不慢的如涓涓溪水静静的流去，而从身边流去的只有时光，</view>
+        </view>
+
+        <view class='li'>
+          <view class='in'>3月</view>
+          <view class='results border-none'>
+            <view class='dots'></view> 时光荏苒，岁月无声。日子不紧不慢的如涓涓溪水静静的流去，而从身边流去的只有时光，</view>
+        </view>
+      </view>
+
+      <view class='item'>
+        <view class='year'>
+          <view class='i1'></view>
+          <view class='i2'></view>2019年</view>
+        <view class='li'>
+          <view class='in'>3月</view>
+          <view class='results'>
+            <view class='dots'></view> 时光荏苒，岁月无声。日子不紧不慢的如涓涓溪水静静的流去，而从身边流去的只有时光，</view>
+        </view>
+
+        <view class='li'>
+          <view class='in'>13月</view>
+          <view class='results'>
+            <view class='dots'></view> 时光荏苒，岁月无声。日子不紧不慢的如涓涓溪水静静的流去，而从身边流去的只有时光，</view>
+        </view>
+
+        <view class='li'>
+          <view class='in'>3月</view>
+          <view class='results border-none'>
+            <view class='dots'></view> 时光荏苒，岁月无声。日子不紧不慢的如涓涓溪水静静的流去，而从身边流去的只有时光，</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- /企业历程 -->
+
+  <!-- 落地连接 -->
+  <view class='box'>
+    <view class='title'>
+     <view class='icon iconfont iconlianjie1'>
+      </view> <text>落地页连接</text></view>
+
+    <view class='connection'>
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='icon-img'></image>
+        <view class='title'>小程序123456789</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='icon-img'></image>
+        <view class='title'>小程序</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='icon-img'></image>
+        <view class='title'>小程序</view>
+      </view>
+
+      <view class='item'>
+        <image src='/pages/imags/index/0.jpg' class='icon-img'></image>
+        <view class='title'>小程序</view>
+      </view>
+    </view>
+
+  </view>
+  <!-- /落地连接 -->
+
+  <!-- 联系地址 -->
+  <view class='box'>
+    <view class='title'>
+      <view class='icon iconfont icondizhi1'>
+      </view><text> 联系地址</text></view>
+
+    <view class='address'>
+      <view class='map'>
+        <map id="map" longitude="110.191319" latitude="20.331989" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 280rpx;"></map>
+      </view>
+      <!-- <image src='/pages/imags/index/ditu.jpg '></image> -->
+      <view class='bottomx'>
+        <view class='left'>
+          <view class='phone'>4000755909</view>
+          <view class='dizhi'>广东省深圳市罗湖区罗湖科技园</view>
+        </view>
+        <view class='right'>
+          <image src='/pages/imags/index/dh.png '></image>
+          <view class='shuxian'></view>
+          <image src='/pages/imags/index/wz.png '></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- /联系地址 -->
+  <view class='footer'>
+    <view class='support text-align'> —<text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;售WASY提供技术支持&nbsp;&nbsp;</text>  —</view>
+    <view class='version text-align'>2.2.4版本 </view>
+  </view>
+</view>
