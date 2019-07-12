@@ -1,2 +1,123 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class='content'>
+  <view class='header'>
+    <view class='top'>
+      <view class='top-left'>
+        <image src='/pages/imags/user/tx.jpg' class='touxiang'></image>
+        <view class='title'>
+          <view class='name'>杨文耀</view>
+          <view class='bianji'>资料编辑 <image src='/pages/imags/user/fh.png'></image></view>
+        </view>
+      </view>
+      <view class='huizhang'>
+        <image src='/pages/imags/user/8.png '></image>签到赚积分</view>
+      <view class='right'>
+        <image src='/pages/imags/user/bg.png '></image>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- /头部结束 -->
+
+  <view class='list'>
+    <view class='item-zhanghu'>
+      <view class='price'>
+        <view class='title'>佣金账户</view>
+        <view class='rmb'>$1999.00</view>
+      </view>
+      <view class='integral'>
+        <view class='title'>佣金账户</view>
+        <view class='rmb'>$1999.00</view>
+      </view>
+    </view>
+
+    <view class='order-item'>
+      <view class='title'>
+        <view class='left'>我的订单</view>
+        <view class='right'>查看全部</view>
+      </view>
+
+      <view class='order'>
+        <view class='dai'>
+          <image src='/pages/imags/user/df.png'></image>
+          <view class='text'>代付款</view>
+        </view>
+        <view class='dai'>
+         <image src='/pages/imags/user/dfh.png'></image>
+          <view class='text'>代发货</view>
+        </view>
+        <view class='dai'>
+          <image src='/pages/imags/user/ds.png' ></image>
+          <view class='text'>代收货</view>
+        </view>
+        <view class='dai'>
+          <image src='/pages/imags/user/wc.png '></image>
+          <view class='text'>已完成</view>
+        </view>
+      </view>
+    </view>
+
+    <view class='renwu'>
+
+      <view class='li'>
+        <image src='/pages/imags/user/yj.png '></image>
+        <view class='txt'>佣金 赚钱</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/rw.png'></image>
+        <view class='txt'>每日任务</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/jf.png '></image>
+        <view class='txt'>积分管理</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/pt.png '></image>
+        <view class='txt'>我的拼团</view>
+      </view>
+      <view class='li'>
+         <image src='/pages/imags/user/kj.png '></image>
+        <view class='txt'>我的砍价</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/ms.png '></image>
+        <view class='txt'>我的秒杀</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/sc.png '></image>
+        <view class='txt'>我的收藏</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/yh.png'></image>
+        <view class='txt'>优惠卷</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/fp.png'></image>
+        <view class='txt'>发票</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/zj.png '></image>
+        <view class='txt'>中奖记录</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/hb.png '></image>
+        <view class='txt'>红包记录</view>
+      </view>
+       <view class='li'>
+        <image src='/pages/imags/user/sh.png '></image>
+        <view class='txt'>售后管理</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/dz.png'></image>
+        <view class='txt'>收货地址</view>
+      </view>
+      <view class='li'>
+        <image src='/pages/imags/user/kf.png '></image>
+        <view class='txt'>客服咨询</view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

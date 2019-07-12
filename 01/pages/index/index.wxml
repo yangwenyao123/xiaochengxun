@@ -1,7 +1,7 @@
 <view class="content">
   <!-- 轮播图 -->
   <view class='banner'>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class='ps' indicator-dots="true"  indicator-color="#ccc" indicator-active-color="#ff9900">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class='ps' indicator-dots="true" indicator-color="#ccc" indicator-active-color="#ff9900">
       <block wx:for="{{imgUrls}}" wx:key="{{index}}">
         <swiper-item>
           <image src="{{item}}" class="slide-image" />
@@ -16,7 +16,7 @@
       <view class='title'>
         <view class='icon iconfont icontiaochawenjuan'></view>
         <text> 问卷表单</text>
-        </view>
+      </view>
       <view class='from-img'>
         <image src='/pages/imags/index/0.jpg'></image>
       </view>
@@ -31,7 +31,8 @@
     <view class='jieshao'>
       <view class='title'>
         <view class='icon iconfont icontiaochawenjuan'></view>
-         <text>售EASY介绍</text></view>
+        <text>售EASY介绍</text>
+      </view>
       <view class='neirong'>夜，结束了一天的喧嚣后安静下来，伴随着远处路灯那微弱的光。风，毫无预兆地席卷整片旷野，撩动人的思绪万千。星，遥遥地挂在天空之中，闪烁着它那微微星光，不如阳光般灿烂却如花儿般如痴如醉。夜，结束了一天的喧嚣后安静下来，伴随着远处路灯那微弱的光。风，毫无预兆地席卷整片旷野，撩动人的思绪万千。星，遥遥地挂在天空之中，闪烁着它那微微星光，不如阳光般灿烂却如花儿般如痴如醉</view>
     </view>
   </view>
@@ -42,20 +43,22 @@
       <view class='title'>
         <view class='icon iconfont iconshipin'>
 
-        </view><text> 视频展示</text></view>
+        </view>
+        <text> 视频展示</text>
+      </view>
       <view class='video-list'>
 
         <view class='video-one'>
-        <view  class="video2">
-    <video id="myVideo" class="myVideo" src="{{video}}" custom-cache="{{false}}" >
-    </video>
-    <cover-view class="controls" style="display:{{tab_image}};">
-    <cover-image src="/pages/imags/15.png" />
-    </cover-view>
-    <cover-view class="play" style="display:{{tab_image}};z-index:200;">
-   <cover-image bindtap="bindplay" src="/pages/imags/156.png" style="width:160rpx;"  />
-    </cover-view>
-</view>
+          <view class="video2">
+            <video id="myVideo" class="myVideo" src="{{video}}" custom-cache="{{false}}">
+            </video>
+            <cover-view class="controls" style="display:{{tab_image}};">
+              <cover-image src="/pages/imags/15.png" />
+            </cover-view>
+            <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+              <cover-image bindtap="bindplay" src="/pages/imags/156.png" style="width:160rpx;" />
+            </cover-view>
+          </view>
 
 
           <!-- <image src='/pages/imags/index/0.jpg'></image> -->
@@ -87,8 +90,10 @@
   <view class='box'>
     <view class='enterprise'>
       <view class='title'>
-       <view class='icon iconfont iconicon'>
-        </view><text> 企业荣誉</text></view>
+        <view class='icon iconfont iconicon'>
+        </view>
+        <text> 企业荣誉</text>
+      </view>
     </view>
     <view class='ente-box'>
       <view class='item'>
@@ -129,7 +134,9 @@
   <view class='box'>
     <view class='title'>
       <view class='icon iconfont iconhezuo'>
-      </view><text> 合作伙伴</text></view>
+      </view>
+      <text> 合作伙伴</text>
+    </view>
     <view class='partner'>
 
 
@@ -215,7 +222,9 @@
   <view class='box'>
     <view class='title'>
       <view class='icon iconfont icontuanduicheng '>
-      </view><text> 企业高管</text></view>
+      </view>
+      <text> 企业高管</text>
+    </view>
 
     <view class='executives'>
 
@@ -274,13 +283,14 @@
   <view class='box'>
     <view class='title'>
       <view class='icon iconfont iconqiye'>
-      </view><text>企业历程</text> </view>
+      </view>
+      <text>企业历程</text> </view>
 
     <view class='process'>
       <view class='item'>
         <view class='year'>
-         <view class='i1'></view>
-         <view class='i2'></view>
+          <view class='i1'></view>
+          <view class='i2'></view>
           2019年</view>
         <view class='li'>
           <view class='in'>3月</view>
@@ -330,8 +340,10 @@
   <!-- 落地连接 -->
   <view class='box'>
     <view class='title'>
-     <view class='icon iconfont iconlianjie1'>
-      </view> <text>落地页连接</text></view>
+      <view class='icon iconfont iconlianjie1'>
+      </view>
+      <text>落地页连接</text>
+    </view>
 
     <view class='connection'>
       <view class='item'>
@@ -362,7 +374,9 @@
   <view class='box'>
     <view class='title'>
       <view class='icon iconfont icondizhi1'>
-      </view><text> 联系地址</text></view>
+      </view>
+      <text> 联系地址</text>
+    </view>
 
     <view class='address'>
       <view class='map'>
@@ -385,7 +399,8 @@
 
   <!-- /联系地址 -->
   <view class='footer'>
-    <view class='support text-align'> —<text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;售WASY提供技术支持&nbsp;&nbsp;</text>  —</view>
+    <view class='support text-align'> —
+      <text class="user-motto" decode="{{true}}">&nbsp;&nbsp;&nbsp;售WASY提供技术支持&nbsp;&nbsp;</text> —</view>
     <view class='version text-align'>2.2.4版本 </view>
   </view>
 </view>

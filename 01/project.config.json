@@ -3,7 +3,6 @@
 	"packOptions": {
 		"ignore": []
 	},
-  
 	"setting": {
 		"urlCheck": true,
 		"es6": true,

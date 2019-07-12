@@ -10,73 +10,24 @@
     <view class='border'></view>
   </view>
 
-  <view class='wrap-item'>
+
+   <view class='wrap-item' wx:for="{{cards}}">
     <view class='header-title'>
       <image src='/pages/imags/found/0.jpg' class='logo'></image>
       <view class='txt'>售EASY样...</view>
       <view class='icon'><image src='/pages/imags/found/01.png'></image></view>
+      
     </view>
 
-     <view class='wenben'>当清晨的一缕阳光透过窗帘上的空隙映照在沉睡的脸庞时，微微张开的双眼朦胧地注视着周遭的一切，新的一天悄然而至。</view>
+     <view class='wenben'>{{item.text}}</view>
 
      <view class='coverImg'>
-        <image src='/pages/imags/found/0.jpg'></image>
+        <image src='{{item.coverImg}}'></image>
      </view>
 
      <view class='like'>
-        <view class='zan'><image src='/pages/imags/found/dian.png'></image></view>
-        <view class='fenxiang'><image src='/pages/imags/found/fen.png'></image></view>
-     </view>
-
-     <!-- 评论 -->
-     <view class='pinglun'>
-        <image class='touxiang' src='/pages/imags/found/0.jpg' ></image>
-        <view class='shuru'><input placeholder='添加您的评论' placeholder-class='placeholder'></input></view>
-     </view>
-  </view>
-
-   <view class='wrap-item'>
-    <view class='header-title'>
-      <image src='/pages/imags/found/0.jpg' class='logo'></image>
-      <view class='txt'>售EASY样...</view>
-      <view class='icon'><image src='/pages/imags/found/01.png'></image></view>
-    </view>
-
-     <view class='wenben'>当清晨的一缕阳光透过窗帘上的空隙映照在沉睡的脸庞时，微微张开的双眼朦胧地注视着周遭的一切，新的一天悄然而至。</view>
-
-     <view class='coverImg'>
-        <image src='/pages/imags/found/0.jpg'></image>
-     </view>
-
-     <view class='like'>
-        <view class='zan'><image src='/pages/imags/found/dian.png'></image></view>
-        <view class='fenxiang'><image src='/pages/imags/found/fen.png'></image></view>
-     </view>
-
-     <!-- 评论 -->
-     <view class='pinglun'>
-        <image class='touxiang' src='/pages/imags/found/0.jpg' ></image>
-        <view class='shuru'><input placeholder='添加您的评论' placeholder-class='placeholder'></input></view>
-     </view>
-  </view>
-
-
-   <view class='wrap-item'>
-    <view class='header-title'>
-      <image src='/pages/imags/found/0.jpg' class='logo'></image>
-      <view class='txt'>售EASY样...</view>
-      <view class='icon'><image src='/pages/imags/found/01.png'></image></view>
-    </view>
-
-     <view class='wenben'>当清晨的一缕阳光透过窗帘上的空隙映照在沉睡的脸庞时，微微张开的双眼朦胧地注视着周遭的一切，新的一天悄然而至。</view>
-
-     <view class='coverImg'>
-        <image src='/pages/imags/found/0.jpg'></image>
-     </view>
-
-     <view class='like'>
-        <view class='zan'><image src='/pages/imags/found/dian.png'></image></view>
-        <view class='fenxiang'><image src='/pages/imags/found/fen.png'></image></view>
+        <view class='iconfont iconfenxiang'></view>
+        <view class="iconfont icondian-zanx {{item.id==index?'active':''}}"bindtap='zan' data-index='{{index}}'></view>
      </view>
 
      <!-- 评论 -->
@@ -87,3 +38,4 @@
   </view>
 
 </view>
+ <bottomLoadMore have-more="{{haveMore}}"  loading="{{loading}}" ></bottomLoadMore>

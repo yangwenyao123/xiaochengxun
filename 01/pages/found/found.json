@@ -2,5 +2,9 @@
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#000",
   "navigationBarTitleText": "发现",
-  "navigationBarTextStyle": "white"
+  "navigationBarTextStyle": "white",
+
+  "usingComponents": {
+    "bottomLoadMore": "/pages/component/bottomLoadMore/loading"
+  }
 }
